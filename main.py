@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import json
 import openai
 import os
+from kafka import KafkaProducer
 
 # Load the configuration from config.json
 with open('config/config.json', 'r') as config_file:
@@ -82,7 +83,7 @@ def extract_floor_plan(soup):
     return plan
 
 
-async def run(pw):
+async def run(pw, producer):
     print('Connecting to Scraping Browser...')
     browser = await pw.chromium.connect_over_cdp(SBR_WS_CDP)
 
@@ -130,19 +131,23 @@ async def run(pw):
 
             data.update(floor_plan)
             data.update(property_details)
+
             print(data)
+
+            # print("Sending data to Kafka")
+            # producer.send("properties", value=json.dumps(data).encode('utf-8'))
+            # print("Data sent to Kafka")
             break
 
-        print('Navigated! Scraping page content...')
-        # html = await page.content()
-        # print(html)
     finally:
         await browser.close()
 
 
 async def main():
+    producer = KafkaProducer(bootstrap_servers=['localhost:9092'],
+                             max_block_ms=5000)
     async with async_playwright() as playwright:
-        await run(playwright)
+        await run(playwright, producer)
 
 
 if __name__ == '__main__':
