@@ -7,7 +7,7 @@
 ![MIT License](https://img.shields.io/github/license/drjodyannjones/RealEstateDataEngineering.svg?style=for-the-badge)
 
 ## Introduction
-This project embodies a cutting-edge real-time data pipeline designed for precision and scale, addressing the dynamic needs of the London real estate market. By integrating BrightData with Apache Spark, this pipeline delivers a high-performance, scalable solution for extracting, processing, and analyzing real-time property data from Zoopla. Tailored for data-driven decision-making, this project sets a benchmark in advanced analytics and operational excellence in the real estate sector.
+This project builds a real-time data pipeline using Apache Kafka, Apache Spark, and Cassandra. Designed with scalability in mind, the system addresses the dynamic needs of the London real estate market. I leverage BrightData's web scraper with real-time data ingestion through an Apache Kafka producer. An Apache Spark cluster is set up as the consumer, which then outputs the data stream into CassandraDB, which acts as the sink in this pipeline. This pipeline delivers a high-performance, scalable solution for extracting, processing, and analyzing real-time property data from Zoopla. This project is tailored for data-driven decision-making, advanced analytics, and operational excellence in the real estate sector.
 
 ## Built With
 - **BrightData**: For real-time data scraping
