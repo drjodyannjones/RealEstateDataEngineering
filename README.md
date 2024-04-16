@@ -7,8 +7,16 @@
 ![MIT License](https://img.shields.io/github/license/drjodyannjones/RealEstateDataEngineering.svg?style=for-the-badge)
 
 ## Introduction
-This project builds a real-time data pipeline using Apache Kafka, Apache Spark, and Cassandra. Designed with scalability in mind, the system addresses the dynamic needs of the London real estate market. I leverage BrightData's web scraper with real-time data ingestion through an Apache Kafka producer. An Apache Spark cluster is set up as the consumer, which then outputs the data stream into CassandraDB, which acts as the sink in this pipeline. This pipeline delivers a high-performance, scalable solution for extracting, processing, and analyzing real-time property data from Zoopla. This project is tailored for data-driven decision-making, advanced analytics, and operational excellence in the real estate sector.
 
+This project develops a real-time data pipeline to leverage insights from the London real estate market. The system integrates a suite of powerful technologies, including Apache Kafka, Apache Spark, and Cassandra.
+
+The pipeline begins with real-time data collection from BrightData's web scraper, which feeds into an Apache Kafka producer. This architecture is engineered for maximum efficiency and scalability.
+
+The data is then processed by an Apache Spark cluster and stored in a robust CassandraDB solution. A key innovation is the strategic integration of OpenAI's AI models, which significantly enhance the system's ability to extract, structure, and analyze property listings from Zoopla in real time.
+
+This AI-powered integration not only improves the accuracy of the data extraction, but also provides greater flexibility in handling the information. As a result, stakeholders are empowered with actionable insights for swift decision-making.
+
+Aimed at boosting operational efficiency and providing scalable solutions, this data pipeline is a cornerstone for advancing analytics and enhancing market responsiveness in the dynamic real estate sector.
 ## Built With
 - **BrightData**: For real-time data scraping
 - **Apache Spark**: For large-scale data processing
@@ -34,6 +42,7 @@ This project builds a real-time data pipeline using Apache Kafka, Apache Spark, 
 - Apache Spark 3.5.0
 - Python 3.9
 - Scala 2.12
+- OpenAI API Key
 
 ## Getting Started
 ### Installation
