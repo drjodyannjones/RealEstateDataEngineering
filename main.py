@@ -132,12 +132,12 @@ async def run(pw, producer):
             data.update(floor_plan)
             data.update(property_details)
 
-            print(data)
+            # print(data)
 
-            # print("Sending data to Kafka")
-            # producer.send("properties", value=json.dumps(data).encode('utf-8'))
-            # print("Data sent to Kafka")
-            break
+            print("Sending data to Kafka")
+            producer.send("properties", value=json.dumps(data).encode('utf-8'))
+            print("Data sent to Kafka")
+            # break
 
     finally:
         await browser.close()

@@ -163,3 +163,10 @@ config/
 
 # JSON files
 *.json
+
+# TGZ files
+*.tgz
+
+# SH files
+*.sh
+
