@@ -29,23 +29,40 @@ This project builds a real-time data pipeline using Apache Kafka, Apache Spark, 
 ├── requirements.txt                    # Python dependencies required for the entire project.
 ```
 
-
+## Prerequisites
+- Docker
+- Apache Spark
+- Python 3.9
 
 ## Getting Started
-To get a local copy up and running follow these simple steps:
+### Installation
+Clone the repository to your local machine:
 ```bash
 git clone https://github.com/drjodyannjones/RealEstateDataEngineering.git
-cd RealEstateDataEngineering
-docker build -t real-estate-pipeline .
-docker-compose up
 ```
+
 
 ## Usage
-For running the Spark jobs and analyzing real estate data, use:
+1. Building Docker Image:
 ```bash
-spark-submit --class your.class.path jobs/spark-job.py
+docker build -t my-custom-spark:3.5.0 .
 ```
 
+2. Start Docker Container
+```bash
+docker compose up -d
+```
+
+3. Start Data Ingestion process:
+```bash
+python main.py
+```
+4. Start Spark Consumer:
+```bash
+docker exec -it realestatedataengineering-spark-master-1 spark-submit \
+    --packages com.datastax.spark:spark-cassandra-connector_2.12:3.4.1,org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0 \
+    jobs/spark-consumer.py
+```
 
 ## Contributing
 Contributions make the open source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
