@@ -15,7 +15,7 @@ openai.api_key = config['openai_api_key']
 
 SBR_WS_CDP = 'wss://brd-customer-hl_9485e87d-zone-real_estate_browser:ws5r6lm6991n@brd.superproxy.io:9222'
 BASE_URL = "https://zoopla.co.uk"
-LOCATION = "London"
+LOCATION = "Manchester"
 
 
 def extract_picture(picture_section):

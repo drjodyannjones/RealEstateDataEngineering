@@ -31,8 +31,9 @@ This project builds a real-time data pipeline using Apache Kafka, Apache Spark, 
 
 ## Prerequisites
 - Docker
-- Apache Spark
+- Apache Spark 3.5.0
 - Python 3.9
+- Scala 2.12
 
 ## Getting Started
 ### Installation
