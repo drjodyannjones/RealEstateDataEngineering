@@ -1,10 +1,10 @@
 # Real Estate Data Engineering Real Time Pipeline
 
-![Contributors](https://img.shields.io/github/contributors/drjodyannjones/RealEstateDataEngineering.svg?style=for-the-badge)
-![Forks](https://img.shields.io/github/forks/drjodyannjones/RealEstateDataEngineering.svg?style=for-the-badge)
-![Stargazers](https://img.shields.io/github/stars/drjodyannjones/RealEstateDataEngineering.svg?style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/drjodyannjones/RealEstateDataEngineering.svg?style=for-the-badge)
-![MIT License](https://img.shields.io/github/license/drjodyannjones/RealEstateDataEngineering.svg?style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![Cassandra](https://img.shields.io/badge/Cassandra-1287B1?style=for-the-badge&logo=apache-cassandra&logoColor=white)
+
 
 ## Introduction
 
@@ -20,6 +20,7 @@ Aimed at boosting operational efficiency and providing scalable solutions, this 
 ## Built With
 - **BrightData**: For real-time data scraping
 - **Apache Spark**: For large-scale data processing
+- **Apache Kafka**: For real-time stream processing
 - **Docker**: For creating a consistent development and deployment environment
 - **Python**: Primary programming language
 
