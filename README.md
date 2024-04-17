@@ -92,4 +92,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 Dr. Jody-Ann Jones - [drjodyannjones@gmail.com](mailto:drjodyannjones@gmail.com)
-Project Link: [https://github.com/drjodyannjones/RealEstateDataEngineering](https://github.com/drjodyannjones/RealEstateDataEngineering)
+<br>Project Link: [https://github.com/drjodyannjones/RealEstateDataEngineering](https://github.com/drjodyannjones/RealEstateDataEngineering)
